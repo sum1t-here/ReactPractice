@@ -22,7 +22,7 @@ function App() {
     <>
       <h1>Hi, this is a counter project</h1>
       <h2>Counter value: {counter}</h2>
-
+      {/* reference of addValue is passed */}
       <button onClick={addValue}>Add Value</button>
 
       <br />
