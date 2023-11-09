@@ -12,7 +12,13 @@ function App() {
     // setCounter(counter + 1);
 
     counter = counter + 1;
+
     setCounter(counter);
+    setCounter(counter);
+    setCounter(counter);
+    setCounter(counter);
+    // only updated once not 3 times
+    // in useState updates are set in batches due to fiber
   };
 
   const removeValue = () => {
