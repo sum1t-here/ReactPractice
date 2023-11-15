@@ -2,13 +2,13 @@ In React, when you're updating the state using the useState hook, there's a key 
 
 Direct Update:
 
-'''setCounter(counter + 1);'''
+`setCounter(counter + 1);`
 
 In this approach, you're using the current state (counter) directly to calculate the next state. This can lead to issues in certain scenarios, especially when state updates are asynchronous.
 
 Functional Update:
 
-'''setCounter((prevCounter) => prevCounter + 1);'''
+`setCounter((prevCounter) => prevCounter + 1);`
 
 Here, you're using the functional update form. React guarantees that the prevCounter argument in the function will always have the latest state value. It helps avoid issues related to asynchronous state updates and ensures you are working with the most up-to-date state.
 
