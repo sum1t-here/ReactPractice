@@ -45,7 +45,7 @@ export default function InputBox({
           {currencyOption.map((currency) => (
             // rember the key in loops in react
             <option key={currency} value={currency}>
-              usd
+              {currency}
             </option>
           ))}
         </select>
